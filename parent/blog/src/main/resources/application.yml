@@ -1,6 +1,6 @@
 
 server:
-  port: 8763
+  port: 8762
 
 spring:
   application:
@@ -9,6 +9,8 @@ spring:
 eureka:
   instance:
     hostname: 127.0.0.1
+    lease-expiration-duration-in-seconds: 2 #如果2s没有发送心跳，则给服务器发送“剔除”请求
+    lease-renewal-interval-in-seconds: 1 #间隔1s向服务器发送一次心跳
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/

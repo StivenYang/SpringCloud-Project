@@ -20,4 +20,9 @@ public class BlogApplication {
     public ResponseEntityUtil hello(){
         return ResponseEntityUtil.success("123");
     }
+
+    @GetMapping("hi")
+    public ResponseEntityUtil hi(String name){
+        return ResponseEntityUtil.success(name);
+    }
 }

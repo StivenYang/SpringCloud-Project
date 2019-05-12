@@ -1,0 +1,23 @@
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    lease-expiration-duration-in-seconds: 2 #如果2s没有发送心跳，则给服务器发送“剔除”请求
+    lease-renewal-interval-in-seconds: 1 #间隔1s向服务器发送一次心跳
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: service-feign
+  host:
+    connect-timeout-millis: 2000

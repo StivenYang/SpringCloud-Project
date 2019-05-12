@@ -7,9 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="blog" />
+        <module name="config-client" />
+        <module name="config-server" />
         <module name="eureka" />
+        <module name="eureka-server" />
         <module name="parent" />
+        <module name="serice-feign" />
+        <module name="server-zipkin" />
         <module name="service-ribbon" />
+        <module name="service-zuul" />
       </profile>
     </annotationProcessing>
   </component>
