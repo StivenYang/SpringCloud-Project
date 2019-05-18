@@ -5,7 +5,7 @@ server:
 eureka:
   server:
     enable-self-preservation: false #关闭自我保护
-    eviction-interval-timer-in-ms: 60000 #单位ms
+    eviction-interval-timer-in-ms: 10000 #单位ms
   instance:
     hostname: localhost
   client:
