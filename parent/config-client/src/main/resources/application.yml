@@ -14,8 +14,8 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
-    username:
-    password:
+    username: guest
+    password: guest
 eureka:
   client:
     service-url: http://localhost:8889/eureka/

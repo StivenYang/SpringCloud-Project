@@ -7,8 +7,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/forezp/SpringcloudConfig/
-          search-paths: respo
+          uri: https://github.com/StivenYang/SpringBoot-Project
+          search-paths: /parent/springcloud-config/respo
           username:
           password:
       label: master
