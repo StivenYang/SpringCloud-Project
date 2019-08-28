@@ -7,6 +7,7 @@
     <groupId>top.hengshare</groupId>
     <artifactId>parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -15,7 +16,7 @@
         <relativePath/>
     </parent>
     <modules>
-        <module>blog</module>
+<!--        <module>blog</module>-->
         <module>eureka</module>
     </modules>
 

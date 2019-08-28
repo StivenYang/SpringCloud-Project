@@ -2,6 +2,8 @@ package top.hengshare.blog.utils;
 
 import top.hengshare.blog.utils.constant.ReturnCode;
 
+import java.util.Scanner;
+
 /**
  * Created by StivenYang
  * Date 2017/11/10
