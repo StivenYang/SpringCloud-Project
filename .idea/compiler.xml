@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="movie" />
+        <module name="zuul" />
+        <module name="eureka" />
+        <module name="turbine" />
+        <module name="cloud-test" />
+        <module name="hystrix-dashboard" />
+        <module name="upload" />
+        <module name="user" />
+        <module name="sidecar" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka" options="" />
+      <module name="movie" options="" />
+      <module name="sidecar" options="" />
+      <module name="turbine" options="" />
+      <module name="upload" options="" />
+      <module name="user" options="" />
+    </option>
+  </component>
+</project>

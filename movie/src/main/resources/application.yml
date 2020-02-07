@@ -1,0 +1,51 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: movie
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+management:
+  security:
+    enabled: false
+info:
+  app:
+    name: @project.artifactId@
+    encoding: @project.build.sourceEncoding@
+    java:
+      source: @java.version@
+      target: @java.version@
+user:
+  userServiceUrl: http://localhost:8000/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+ribbon:
+  eager-load:
+    clients: user
+    enabled: true
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      user:
+        loggerLevel: full
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+    default-to-properties: true
+  compression:
+    request:
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+logging:
+  level:
+    top.hengshare.cloud.movie.feign.UserFeignClient: debug

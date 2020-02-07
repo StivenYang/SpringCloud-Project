@@ -1,0 +1,48 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: user
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+  cloud:
+    inetutils:
+      ignored-interfaces: #忽略指定的网卡（适用于多网卡环境）
+        - docker0
+        - veth.*
+      preferred-networks: #注册指定的网卡ip（适用于多网卡环境）
+        - 192.168
+        - 10.0
+      use-only-site-local-interfaces: true #只使用站点本地地址
+logging:
+  level:
+    root: info
+management:
+  security:
+    enabled: false #关闭security可以使用全部的actuator
+info:
+  app:
+    name: @project.artifactId@
+    encoding: @project.build.sourceEncoding@
+    java:
+      source: @java.version@
+      target: @java.version@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true #启用eureka的健康检查，会将服务的健康状态传播到eureka server
+  instance:
+    prefer-ip-address: true #注册显示的是ip而不是主机名称hostname
+    ip-address: 127.0.0.1 #手动指定ip地址，可以随意指定（但是要保证访问正常不是吗？）
+security:
+  basic:
+    enabled: false
