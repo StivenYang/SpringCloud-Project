@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>top.hengshare.cloud</groupId>
-    <artifactId>user</artifactId>
+    <artifactId>hystrix-dashboard</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>hystrix-dashboard</name>
     <description>用户服务</description>

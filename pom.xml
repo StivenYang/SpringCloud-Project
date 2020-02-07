@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>top.hengshare.cloud</groupId>
-    <artifactId>cloud-test</artifactId>
+    <artifactId>SpringCloud-Project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
@@ -14,6 +14,9 @@
         <module>eureka</module>
         <module>hystrix-dashboard</module>
         <module>zuul</module>
+        <module>sidecar</module>
+        <module>turbine</module>
+        <module>upload</module>
     </modules>
 
 </project>
