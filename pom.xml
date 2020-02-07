@@ -17,6 +17,7 @@
         <module>sidecar</module>
         <module>turbine</module>
         <module>upload</module>
+        <module>config</module>
     </modules>
 
 </project>

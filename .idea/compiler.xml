@@ -16,11 +16,13 @@
         <module name="SpringCloud-Project" />
         <module name="upload" />
         <module name="user" />
+        <module name="config" />
         <module name="sidecar" />
         <module name="user (2)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="hystrix-dashboard" target="1.8" />
       <module name="movie" target="1.8" />
@@ -34,6 +36,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config" options="" />
       <module name="eureka" options="" />
       <module name="movie" options="" />
       <module name="sidecar" options="" />
