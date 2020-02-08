@@ -10,4 +10,4 @@ spring:
           uri: https://github.com/StivenYang/SpringCloud-Project
           username:
           password:
-          search-paths: config-repo
+          search-paths: config-repo/{application}
