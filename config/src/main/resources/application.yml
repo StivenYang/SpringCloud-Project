@@ -11,3 +11,4 @@ spring:
           username:
           password:
           search-paths: config-repo/{application}
+          clone-on-start: true
