@@ -21,6 +21,10 @@ spring:
         - 192.168
         - 10.0
       use-only-site-local-interfaces: true #只使用站点本地地址
+    config:
+      uri: http://localhost:8080
+      profile: dev
+      label: master
 logging:
   level:
     root: info
