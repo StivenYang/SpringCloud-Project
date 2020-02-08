@@ -30,6 +30,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         //所有的请求，都要经过http认证
 //        http.authorizeRequests().anyRequest().authenticated().and().httpBasic();
         http.authorizeRequests().anyRequest().permitAll().and().logout().permitAll();
+        http.csrf().disable();
     }
 
     @Bean
